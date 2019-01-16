@@ -37,7 +37,6 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
     public int getChildrenCount(int groupPosition) {
         //size?
         return 1;
-                //this._expandableListDetail.get(this.expandableListTitle.get(groupPosition)).get();
     }
 
     @Override
@@ -47,7 +46,8 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
 
     @Override
     public Object getChild(int groupPosition, int childPosition) {
-        return this._expandableListDetail.get(this.expandableListTitle.get(groupPosition)).getText();
+        //return this._expandableListDetail.get(this.expandableListTitle.get(groupPosition)).getText();
+        return "";
     }
 
     @Override
@@ -91,18 +91,20 @@ public class CustomExpandableListAdapter extends BaseExpandableListAdapter {
         }
         EditText expandedListTextView = (EditText) convertView
                 .findViewById(R.id.expandedListItem);
-        if (groupPosition == 0)
-            expandedListTextView.setHint("What happend?");
-        else if (groupPosition == 1)
+        if (groupPosition == 0) {
+            expandedListTextView.setHint("What happened?");
+        }else if (groupPosition == 1) {
             expandedListTextView.setHint("Where did it happen?");
-        else if (groupPosition ==2)
-            expandedListTextView.setHint("When did it happend?");
-        else if (groupPosition == 3)
+        }else if (groupPosition ==2) {
+            expandedListTextView.setHint("When did it happen?");
+        }else if (groupPosition == 3) {
             expandedListTextView.setHint("Who was the perpetrator(s)?");
-        else
+        }else {
             expandedListTextView.setHint("Anything else you want to report about?");
-
-        expandedListTextView.setText(expandedListText);
+        }
+        if (!expandedListText.equals(""))
+            expandedListTextView.setText(expandedListText);
+        
         return convertView;
     }
 
