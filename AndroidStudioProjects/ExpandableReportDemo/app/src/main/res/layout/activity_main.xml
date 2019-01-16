@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:scrollbars="vertical">
+    <ExpandableListView
+        android:layout_width="match_parent"
+        android:layout_height="440dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:id="@+id/expandableListView"
+        android:divider="@android:color/black"
+        android:dividerHeight="0.5dp">
+    </ExpandableListView>
+
+    <LinearLayout
+        android:layout_below="@+id/expandableListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/saveBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="-1dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="Save and Exit"
+            android:textSize="15sp"
+            android:enabled="false"/>
+    </LinearLayout>
+
+</RelativeLayout>
