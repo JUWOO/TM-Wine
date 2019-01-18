@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Report</string>
+    <string name="whatBtn">What</string>
+    <string name="whereBtn">Where</string>
+    <string name="whenText">When</string>
+    <string name="whoBtn">Who</string>
+    <string name="detailsBtn">Details</string>
+    <string name="saveBtn">Save and Exit</string>
 </resources>

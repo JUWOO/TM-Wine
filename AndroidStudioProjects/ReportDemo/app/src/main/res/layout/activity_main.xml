@@ -23,19 +23,20 @@
             android:layout_alignParentLeft="true"
             android:layout_marginTop="15dp"
             android:buttonTint="@android:color/white"/>
+
         <Button
             android:id="@+id/whatBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="What"
-            android:textSize="18dp"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="200dp"
             android:layout_toRightOf="@+id/whatCheck"
             android:background="#00ff0000"
-            android:textColor="@android:color/white"/>
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="200dp"
+            android:paddingBottom="20dp"
+            android:text="@string/whatBtn"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
         <ImageButton
             android:id="@+id/whatArrow"
             android:layout_width="wrap_content"
@@ -87,19 +88,20 @@
             android:layout_alignParentLeft="true"
             android:layout_marginTop="15dp"
             android:buttonTint="@android:color/white"/>
+
         <Button
             android:id="@+id/whereBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="200dp"
             android:layout_toRightOf="@+id/whereCheck"
             android:background="#00ff0000"
-            android:text="Where"
-            android:textSize="18dp"
-            android:textColor="@android:color/white"/>
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="200dp"
+            android:paddingBottom="20dp"
+            android:text="@string/whereBtn"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="50dp"
@@ -149,19 +151,20 @@
             android:layout_alignParentLeft="true"
             android:layout_marginTop="15dp"
             android:buttonTint="@android:color/white"/>
+
         <Button
             android:id="@+id/whenBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="200dp"
             android:layout_toRightOf="@+id/whenCheck"
             android:background="#00ff0000"
-            android:text="When"
-            android:textSize="18dp"
-            android:textColor="@android:color/white"/>
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="200dp"
+            android:paddingBottom="20dp"
+            android:text="@string/whenText"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="50dp"
@@ -212,19 +215,20 @@
             android:layout_alignParentLeft="true"
             android:layout_marginTop="15dp"
             android:buttonTint="@android:color/white"/>
+
         <Button
             android:id="@+id/whoBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="200dp"
             android:layout_toRightOf="@+id/whoCheck"
             android:background="#00ff0000"
-            android:text="Who"
-            android:textSize="18dp"
-            android:textColor="@android:color/white"/>
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="200dp"
+            android:paddingBottom="20dp"
+            android:text="@string/whoBtn"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="50dp"
@@ -275,19 +279,20 @@
             android:layout_alignParentLeft="true"
             android:layout_marginTop="15dp"
             android:buttonTint="@android:color/white"/>
+
         <Button
             android:id="@+id/detailsBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-            android:paddingLeft="20dp"
-            android:paddingRight="180dp"
             android:layout_toRightOf="@+id/detailsCheck"
             android:background="#00ff0000"
-            android:text="Details"
-            android:textSize="18dp"
-            android:textColor="@android:color/white"/>
+            android:paddingLeft="20dp"
+            android:paddingTop="20dp"
+            android:paddingRight="180dp"
+            android:paddingBottom="20dp"
+            android:text="@string/detailsBtn"
+            android:textColor="@android:color/white"
+            android:textSize="18dp" />
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="50dp"
@@ -326,16 +331,17 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp">
+
         <Button
             android:id="@+id/saveBtn"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:text="Save and Exit"
-            android:layout_alignParentBottom="true"
+            android:background="#FFC107"
             android:enabled="false"
-            android:background="#FFC107"/>
+            android:text="@string/saveBtn" />
     </RelativeLayout>
 </android.widget.RelativeLayout>
 
